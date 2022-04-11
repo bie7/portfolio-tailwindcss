@@ -2,29 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body {
-   font-family: 'Inter', sans-serif
+  font-family: "Inter", sans-serif;
 }
 
 .navbar-fixed {
-   @apply fixed z-[999] bg-white bg-opacity-70 backdrop-blur-sm drop-shadow-md transition duration-300;
+  @apply fixed z-[999] bg-white bg-opacity-70 drop-shadow-md backdrop-blur-sm transition duration-300 dark:bg-dark dark:bg-opacity-70;
 }
 
 .hamburger-line {
-   @apply w-[30px] h-[2px] my-2 block bg-dark
+  @apply my-2 block h-[2px] w-[30px] bg-dark dark:bg-white;
 }
 
-
-.hamburger-active>span:nth-child(1) {
-   @apply rotate-45
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
 }
 
-.hamburger-active>span:nth-child(2) {
-   @apply scale-0
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
 }
 
-.hamburger-active>span:nth-child(3) {
-   @apply -rotate-45
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-3;
 }

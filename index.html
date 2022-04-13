@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="final.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="dist/final.css" />
     <script>
       if (
         localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
+        (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
       ) {
         document.documentElement.classList.add("dark");
       } else {
@@ -22,9 +27,7 @@
 
   <body>
     <!-- Header -->
-    <header
-      class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent"
-    >
+    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-4">
@@ -44,9 +47,7 @@
               <span
                 class="hamburger-line origin-top-left transition duration-300 ease-in-out"
               ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out"
-              ></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
               <span
                 class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
               ></span>
@@ -101,11 +102,7 @@
                 </li>
                 <li class="flex items-center">
                   <div class="mt-2 ml-6 flex">
-                    <img
-                      src="img/icon/light-mode.svg"
-                      alt="light"
-                      class="mr-3 h-6 w-6"
-                    />
+                    <img src="img/icon/light-mode.svg" alt="light" class="mr-3 h-6 w-6" />
                     <input type="checkbox" id="dark-toggle" class="hidden" />
                     <label for="dark-toggle">
                       <div
@@ -116,11 +113,7 @@
                         ></div>
                       </div>
                     </label>
-                    <img
-                      src="img/icon/dark-mode.svg"
-                      alt="dark"
-                      class="ml-3 h-6 w-6"
-                    />
+                    <img src="img/icon/dark-mode.svg" alt="dark" class="ml-3 h-6 w-6" />
                   </div>
                 </li>
               </ul>
@@ -139,8 +132,7 @@
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-primary md:text-xl">
               Hallo Semua 👋, Saya
-              <span
-                class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl"
+              <span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl"
                 >Habibi</span
               >
             </h1>
@@ -150,9 +142,7 @@
             </h2>
             <p class="mb-8 font-medium leading-relaxed text-secondary">
               Belajar Programming Itu Mudah dan
-              <span class="font-semibold text-dark dark:text-white"
-                >Menyenangkan</span
-              >
+              <span class="font-semibold text-dark dark:text-white">Menyenangkan</span>
               😊
             </p>
 
@@ -171,9 +161,7 @@
                 class="relative z-10 mx-auto mb-3 max-w-full drop-shadow-md dark:shadow-slate-400"
               />
 
-              <span
-                class="absolute bottom-20 left-1/2 -translate-x-1/2 md:scale-125"
-              >
+              <span class="absolute bottom-20 left-1/2 -translate-x-1/2 md:scale-125">
                 <svg
                   width="400"
                   height="400"
@@ -199,30 +187,22 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-10 w-full px-4 lg:w-1/2">
-            <h4 class="mb-3 text-lg font-bold uppercase text-primary">
-              Tentang Saya
-            </h4>
-            <h2
-              class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl"
-            >
+            <h4 class="mb-3 text-lg font-bold uppercase text-primary">Tentang Saya</h4>
+            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl">
               Yuk, Belajar Pemograman Bersamaku 😊
             </h2>
             <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
-              qui dolore libero, laudantium nihil veniam! Reprehenderit!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia qui dolore libero,
+              laudantium nihil veniam! Reprehenderit!
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <h3
-              class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:mt-11 lg:text-3xl"
-            >
+            <h3 class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:mt-11 lg:text-3xl">
               Mari Berteman 🤝
             </h3>
-            <p
-              class="mb-6 max-w-xl text-base font-medium text-secondary lg:text-lg"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              corporis delectus sequi quo perspiciatis maxime aut iusto placeat.
+            <p class="mb-6 max-w-xl text-base font-medium text-secondary lg:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corporis delectus sequi
+              quo perspiciatis maxime aut iusto placeat.
             </p>
             <div class="flex items-center">
               <!-- github -->
@@ -334,78 +314,61 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold uppercase text-primary">
-              Portfolio
-            </h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
-            >
+            <h4 class="mb-2 text-lg font-semibold uppercase text-primary">Portfolio</h4>
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
               Project Terbaru
             </h2>
             <p class="text-md font-medium text-secondary md:text-lg">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
-              veritatis, laboriosam non adipisci nostrum recusandae? Aliquid
-              officia perspiciatis laborum non!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio veritatis, laboriosam
+              non adipisci nostrum recusandae? Aliquid officia perspiciatis laborum non!
             </p>
           </div>
         </div>
-        <div
-          class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12"
-        >
+        <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="img/foto/101.jpg" alt="landing page" width="w-full" />
             </div>
-            <h3
-              class="mt-5 mb-4 text-xl font-semibold text-dark dark:text-white"
-            >
+            <h3 class="mt-5 mb-4 text-xl font-semibold text-dark dark:text-white">
               Project Pertama
             </h3>
             <p class="text-base font-medium text-secondary">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus maxime accusamus ad?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus maxime
+              accusamus ad?
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="img/foto/102.jpg" alt="kedua" width="w-full" />
             </div>
-            <h3
-              class="mt-5 mb-4 text-xl font-semibold text-dark dark:text-white"
-            >
-              Project Kedua
-            </h3>
+            <h3 class="mt-5 mb-4 text-xl font-semibold text-dark dark:text-white">Project Kedua</h3>
             <p class="text-base font-medium text-secondary">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus maxime accusamus ad?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus maxime
+              accusamus ad?
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="img/foto/103.jpg" alt="ketiga" width="w-full" />
             </div>
-            <h3
-              class="mt-5 mb-4 text-xl font-semibold text-dark dark:text-white"
-            >
+            <h3 class="mt-5 mb-4 text-xl font-semibold text-dark dark:text-white">
               Project Ketiga
             </h3>
             <p class="text-base font-medium text-secondary">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus maxime accusamus ad?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus maxime
+              accusamus ad?
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="img/foto/104.jpg" alt="keempat" width="w-full" />
             </div>
-            <h3
-              class="mt-5 mb-4 text-xl font-semibold text-dark dark:text-white"
-            >
+            <h3 class="mt-5 mb-4 text-xl font-semibold text-dark dark:text-white">
               Project Keempat
             </h3>
             <p class="text-base font-medium text-secondary">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus maxime accusamus ad?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus maxime
+              accusamus ad?
             </p>
           </div>
         </div>
@@ -418,17 +381,12 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center">
-            <h4 class="mb-2 text-lg font-semibold uppercase text-primary">
-              Clients
-            </h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl"
-            >
+            <h4 class="mb-2 text-lg font-semibold uppercase text-primary">Clients</h4>
+            <h2 class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl">
               Yang Pernah Bekerja Sama
             </h2>
             <p class="text-md font-medium text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-              autem officiis quo.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem officiis quo.
             </p>
           </div>
         </div>
@@ -481,26 +439,20 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold uppercase text-primary">
-              Blog
-            </h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
-            >
+            <h4 class="mb-2 text-lg font-semibold uppercase text-primary">Blog</h4>
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
               Tulisan Terkini
             </h2>
             <p class="text-md font-medium text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
-              nostrum impedit saepe facere!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nostrum impedit saepe
+              facere!
             </p>
           </div>
         </div>
 
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-700"
-            >
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-700">
               <img
                 src="https://source.unsplash.com/360x200?programming"
                 alt="Programming"
@@ -515,8 +467,7 @@
                   >
                 </h3>
                 <p class="mb-6 text-base font-medium text-secondary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt, tenetur?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tenetur?
                 </p>
                 <a
                   href="#"
@@ -528,9 +479,7 @@
           </div>
 
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-700"
-            >
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-700">
               <img
                 src="https://source.unsplash.com/360x200?mechanical+keyboard"
                 alt="Mechanical Keyboard"
@@ -545,8 +494,8 @@
                   >
                 </h3>
                 <p class="mb-6 text-base font-medium text-secondary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Mollitia odio distinctio expedita.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia odio distinctio
+                  expedita.
                 </p>
                 <a
                   href="#"
@@ -558,14 +507,8 @@
           </div>
 
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-700"
-            >
-              <img
-                src="https://source.unsplash.com/360x200?coffee"
-                alt="Coffee"
-                class="w-full"
-              />
+            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-700">
+              <img src="https://source.unsplash.com/360x200?coffee" alt="Coffee" class="w-full" />
               <div class="py-8 px-6">
                 <h3>
                   <a
@@ -575,9 +518,8 @@
                   </a>
                 </h3>
                 <p class="mb-6 text-base font-medium text-secondary">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Ducimus corrupti tempora repudiandae necessitatibus officiis
-                  doloremque.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus corrupti tempora
+                  repudiandae necessitatibus officiis doloremque.
                 </p>
                 <a
                   href="#"
@@ -597,26 +539,19 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold uppercase text-primary">
-              Contact
-            </h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
-            >
+            <h4 class="mb-2 text-lg font-semibold uppercase text-primary">Contact</h4>
+            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
               Hubungi Kami
             </h2>
             <p class="text-md font-medium text-secondary md:text-lg">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas,
-              dicta!
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, dicta!
             </p>
           </div>
         </div>
         <form action="">
           <div class="w-full lg:mx-auto lg:w-2/3">
             <div class="mb-6 w-full px-4">
-              <label for="name" class="text-base font-bold text-primary"
-                >Nama</label
-              >
+              <label for="name" class="text-base font-bold text-primary">Nama</label>
               <input
                 type="text"
                 id="name"
@@ -624,9 +559,7 @@
               />
             </div>
             <div class="mb-6 w-full px-4">
-              <label for="email" class="mb-3 text-base font-bold text-primary"
-                >Email</label
-              >
+              <label for="email" class="mb-3 text-base font-bold text-primary">Email</label>
               <input
                 type="email"
                 id="eamil"
@@ -634,9 +567,7 @@
               />
             </div>
             <div class="mb-6 w-full px-4">
-              <label for="message" class="mb-3 text-base font-bold text-primary"
-                >Pesan</label
-              >
+              <label for="message" class="mb-3 text-base font-bold text-primary">Pesan</label>
               <textarea
                 type="text"
                 id="message"
@@ -669,30 +600,16 @@
           </div>
 
           <div class="mb-12 w-full px-4 md:w-1/3">
-            <h3 class="mb-5 text-xl font-semibold text-white">
-              Kategori Tulisan
-            </h3>
+            <h3 class="mb-5 text-xl font-semibold text-white">Kategori Tulisan</h3>
             <ul class="text-slate-300">
               <li>
-                <a
-                  href="#"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >Programming</a
-                >
+                <a href="#" class="mb-3 inline-block text-base hover:text-primary">Programming</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >Teknologi</a
-                >
+                <a href="#" class="mb-3 inline-block text-base hover:text-primary">Teknologi</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >Gaya Hidup</a
-                >
+                <a href="#" class="mb-3 inline-block text-base hover:text-primary">Gaya Hidup</a>
               </li>
             </ul>
           </div>
@@ -701,44 +618,28 @@
             <h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
             <ul class="text-slate-300">
               <li>
-                <a
-                  href="#home"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >Beranda</a
-                >
+                <a href="#home" class="mb-3 inline-block text-base hover:text-primary">Beranda</a>
               </li>
               <li>
-                <a
-                  href="#about"
-                  class="mb-3 inline-block text-base hover:text-primary"
+                <a href="#about" class="mb-3 inline-block text-base hover:text-primary"
                   >Tentang Saya</a
                 >
               </li>
               <li>
-                <a
-                  href="#portfolio"
-                  class="mb-3 inline-block text-base hover:text-primary"
+                <a href="#portfolio" class="mb-3 inline-block text-base hover:text-primary"
                   >Portfolio</a
                 >
               </li>
               <li>
-                <a
-                  href="#clients"
-                  class="mb-3 inline-block text-base hover:text-primary"
+                <a href="#clients" class="mb-3 inline-block text-base hover:text-primary"
                   >Clients</a
                 >
               </li>
               <li>
-                <a
-                  href="#blog"
-                  class="mb-3 inline-block text-base hover:text-primary"
-                  >Blog</a
-                >
+                <a href="#blog" class="mb-3 inline-block text-base hover:text-primary">Blog</a>
               </li>
               <li>
-                <a
-                  href="#contact"
-                  class="mb-3 inline-block text-base hover:text-primary"
+                <a href="#contact" class="mb-3 inline-block text-base hover:text-primary"
                   >Contact</a
                 >
               </li>
@@ -848,10 +749,7 @@
           </div>
           <p class="text-medium text-center text-xs text-slate-400">
             Dibuat Dengan <span class="text-lg text-pink-500">♥</span>
-            <a
-              href="https://github.com/bie71"
-              target="_blank"
-              class="font-bold text-primary"
+            <a href="https://github.com/bie71" target="_blank" class="font-bold text-primary"
               >Habibi</a
             >
             Menggunakan
@@ -875,12 +773,7 @@
       class="fixed bottom-4 right-4 z-[999] hidden h-11 w-11 animate-bounce rounded-full bg-primary p-4 text-white shadow-md hover:animate-pulse lg:h-14 lg:w-14"
       id="to-top"
     >
-      <svg
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-        class="fill-current"
-      >
+      <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
         <title>Acclaim</title>
         <path
           d="M12.468.186a.7.7 0 0 0-.95 0L1.924 9.193a1.705 1.705 0 0 0-.475 1.095v3.59c0 .358.214.452.475.207l9.601-9.01a.705.705 0 0 1 .95 0l9.603 9.01c.262.245.475.151.475-.207v-3.59a1.71 1.71 0 0 0-.475-1.095zm0 9.783a.705.705 0 0 0-.95 0l-9.595 9.002a1.705 1.705 0 0 0-.475 1.094v3.59c0 .358.214.453.475.208l9.601-9.007a.701.701 0 0 1 .95 0l9.603 9.008c.262.244.475.15.475-.208v-3.59a1.71 1.71 0 0 0-.475-1.094Z"

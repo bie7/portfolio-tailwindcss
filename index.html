@@ -10,7 +10,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
 
-    <link rel="stylesheet" href="dist/final.css" />
+    <!-- <link rel="stylesheet" href="dist/final.css" /> -->
+    <link rel="stylesheet" href="style.css" />
     <script>
       if (
         localStorage.theme === "dark" ||
@@ -22,7 +23,12 @@
       }
     </script>
 
-    <title>Portfolio Tailwind CSS</title>
+    <!-- script swal fire -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet" /> -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script> -->
+
+    <title>Portfolio</title>
   </head>
 
   <body>
@@ -31,11 +37,7 @@
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-4">
-            <a
-              href="#home"
-              class="block py-6 text-xl font-bold text-primary transition duration-300 hover:-translate-y-1"
-              >Habibi</a
-            >
+            <a href="#home"><img src="img/logo.png" alt="logo" class="w-36" /></a>
           </div>
           <div class="flex items-center px-4">
             <button
@@ -55,7 +57,7 @@
 
             <nav
               id="nav-menu"
-              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-600 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 font-medium shadow-lg dark:bg-dark dark:shadow-slate-600 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
             >
               <ul class="block lg:flex">
                 <li class="group">
@@ -147,7 +149,8 @@
             </p>
 
             <a
-              href="#"
+              href="https://api.whatsapp.com/send?phone=6285777537687&text=Assalaamualaikum"
+              target="_blank"
               class="rounded-xl bg-primary py-3 px-8 text-base font-semibold text-white shadow-sm transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
               >Hubungi Saya</a
             >
@@ -158,7 +161,7 @@
               <img
                 src="img/avatar.png"
                 alt="foto"
-                class="relative z-10 mx-auto mb-3 max-w-full drop-shadow-md dark:shadow-slate-400"
+                class="relative z-10 mx-auto mb-3 max-w-full drop-shadow-md duration-300 ease-in-out hover:scale-105 dark:shadow-slate-400"
               />
 
               <span class="absolute bottom-20 left-1/2 -translate-x-1/2 md:scale-125">
@@ -189,11 +192,12 @@
           <div class="mb-10 w-full px-4 lg:w-1/2">
             <h4 class="mb-3 text-lg font-bold uppercase text-primary">Tentang Saya</h4>
             <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl">
-              Yuk, Belajar Pemograman Bersamaku 😊
+              Yuk, Belajar Pemograman 😊
             </h2>
             <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia qui dolore libero,
-              laudantium nihil veniam! Reprehenderit!
+              Saya Adalah Seorang Yang Sedang Ingin Berkembang Belajar Pemograman Baik Itu Frontend
+              ataupun Backend. Saat Ini Saya Menggunakan Teknologi Stack MERN (MongoDB / MySQL,
+              ExpressJs, React, NodeJS).
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
@@ -201,8 +205,8 @@
               Mari Berteman 🤝
             </h3>
             <p class="mb-6 max-w-xl text-base font-medium text-secondary lg:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corporis delectus sequi
-              quo perspiciatis maxime aut iusto placeat.
+              Hubungi Saya Melalui Platform Yang Tersedia Dibawah, Atau Jika Ingin Menghubungi
+              Melalui Whatsapp Silakan klik Tombol Hubungi Saya Diatas Ya.
             </p>
             <div class="flex items-center">
               <!-- github -->
@@ -319,13 +323,12 @@
               Project Terbaru
             </h2>
             <p class="text-md font-medium text-secondary md:text-lg">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio veritatis, laboriosam
-              non adipisci nostrum recusandae? Aliquid officia perspiciatis laborum non!
+              Berikut Adalah Beberapa Project Yang Pernah Dibuat
             </p>
           </div>
         </div>
         <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 duration-300 ease-in-out hover:scale-105 hover:shadow-lg md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="img/foto/101.jpg" alt="landing page" width="w-full" />
             </div>
@@ -337,7 +340,7 @@
               accusamus ad?
             </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 duration-300 ease-in-out hover:scale-105 hover:shadow-lg md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="img/foto/102.jpg" alt="kedua" width="w-full" />
             </div>
@@ -347,7 +350,7 @@
               accusamus ad?
             </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 duration-300 ease-in-out hover:scale-105 hover:shadow-lg md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="img/foto/103.jpg" alt="ketiga" width="w-full" />
             </div>
@@ -359,7 +362,7 @@
               accusamus ad?
             </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 duration-300 ease-in-out hover:scale-105 hover:shadow-lg md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="img/foto/104.jpg" alt="keempat" width="w-full" />
             </div>
@@ -444,19 +447,21 @@
               Tulisan Terkini
             </h2>
             <p class="text-md font-medium text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nostrum impedit saepe
-              facere!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deserunt nostrum hic
+              autem, et maiores!
             </p>
           </div>
         </div>
 
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-700">
+            <div
+              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg duration-300 ease-in-out hover:ring-2 hover:ring-primary dark:bg-slate-700"
+            >
               <img
                 src="https://source.unsplash.com/360x200?programming"
                 alt="Programming"
-                class="w-full"
+                class="w-full duration-200 ease-in-out hover:scale-110"
               />
               <div class="py-8 px-6">
                 <h3>
@@ -467,7 +472,8 @@
                   >
                 </h3>
                 <p class="mb-6 text-base font-medium text-secondary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, tenetur?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ex consectetur ea
+                  nesciunt, a at.
                 </p>
                 <a
                   href="#"
@@ -479,11 +485,13 @@
           </div>
 
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-700">
+            <div
+              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg duration-300 ease-in-out hover:ring-2 hover:ring-primary dark:bg-slate-700"
+            >
               <img
                 src="https://source.unsplash.com/360x200?mechanical+keyboard"
                 alt="Mechanical Keyboard"
-                class="w-full"
+                class="w-full duration-200 ease-in-out hover:scale-110"
               />
               <div class="py-8 px-6">
                 <h3>
@@ -494,8 +502,8 @@
                   >
                 </h3>
                 <p class="mb-6 text-base font-medium text-secondary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia odio distinctio
-                  expedita.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloribus
+                  adipisci iusto omnis deserunt dicta.
                 </p>
                 <a
                   href="#"
@@ -507,8 +515,14 @@
           </div>
 
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-700">
-              <img src="https://source.unsplash.com/360x200?coffee" alt="Coffee" class="w-full" />
+            <div
+              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg duration-300 ease-in-out hover:ring-2 hover:ring-primary dark:bg-slate-700"
+            >
+              <img
+                src="https://source.unsplash.com/360x200?coffee"
+                alt="Coffee"
+                class="w-full duration-200 ease-in-out hover:scale-110"
+              />
               <div class="py-8 px-6">
                 <h3>
                   <a
@@ -518,8 +532,8 @@
                   </a>
                 </h3>
                 <p class="mb-6 text-base font-medium text-secondary">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus corrupti tempora
-                  repudiandae necessitatibus officiis doloremque.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vitae magnam,
+                  impedit aperiam omnis autem.
                 </p>
                 <a
                   href="#"
@@ -544,11 +558,11 @@
               Hubungi Kami
             </h2>
             <p class="text-md font-medium text-secondary md:text-lg">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, dicta!
+              Silakan Isi Dengan Sesuai Format
             </p>
           </div>
         </div>
-        <form action="">
+        <form name="contact-form" id="form-contact">
           <div class="w-full lg:mx-auto lg:w-2/3">
             <div class="mb-6 w-full px-4">
               <label for="name" class="text-base font-bold text-primary">Nama</label>
@@ -556,29 +570,62 @@
                 type="text"
                 id="name"
                 class="mt-3 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                name="nama"
+                required
+                placeholder="Nama"
               />
             </div>
             <div class="mb-6 w-full px-4">
-              <label for="email" class="mb-3 text-base font-bold text-primary">Email</label>
+              <label for="email" class="mb-3 text-base font-bold text-primary" required
+                >Email</label
+              >
               <input
                 type="email"
-                id="eamil"
+                id="email"
                 class="mt-3 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                name="email"
+                required
+                placeholder="Email"
               />
             </div>
             <div class="mb-6 w-full px-4">
-              <label for="message" class="mb-3 text-base font-bold text-primary">Pesan</label>
+              <label for="tel" class="mb-3 text-base font-bold text-primary" required
+                >Telepon</label
+              >
+              <input
+                type="tel"
+                id="tel"
+                class="mt-3 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                name="telepon"
+                required
+                placeholder="Telepon"
+              />
+            </div>
+            <div class="mb-6 w-full px-4">
+              <label for="message" class="mb-3 text-base font-bold text-primary" required
+                >Pesan</label
+              >
               <textarea
                 type="text"
                 id="message"
                 class="mt-3 h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                name="pesan"
+                required
+                placeholder="Pesan"
               ></textarea>
             </div>
             <div class="w-full px-4">
               <button
                 class="w-full rounded-lg bg-primary py-3 px-10 text-base font-bold text-white shadow-sm transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                id="loading-button"
               >
-                Kirim
+                <img
+                  src="img/loading/loading.svg"
+                  alt="loading"
+                  class="right-28 hidden w-8 animate-pulse"
+                  id="loading"
+                />
+                <span class="text-span">Kirim</span>
               </button>
             </div>
           </div>
@@ -770,7 +817,7 @@
     <!-- back to top -->
     <a
       href="#home"
-      class="fixed bottom-4 right-4 z-[999] hidden h-11 w-11 animate-bounce rounded-full bg-primary p-4 text-white shadow-md hover:animate-pulse lg:h-14 lg:w-14"
+      class="fixed bottom-4 right-4 z-[999] hidden h-11 w-11 rounded-full bg-primary p-4 text-white shadow-md hover:animate-pulse lg:h-14 lg:w-14"
       id="to-top"
     >
       <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
@@ -783,5 +830,6 @@
     <!-- end back to top -->
 
     <script src="script.js"></script>
+    <script src="submitscript.js"></script>
   </body>
 </html>

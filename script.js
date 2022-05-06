@@ -22,15 +22,6 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("hidden");
 });
 
-// window click
-
-window.addEventListener("click", (e) => {
-  if (e.target != hamburger && e.target != navMenu) {
-    hamburger.classList.remove("hamburger-active");
-    navMenu.classList.add("hidden");
-  }
-});
-
 // dark mode toggle
 
 const darkToggle = document.querySelector("#dark-toggle");
@@ -50,8 +41,7 @@ darkToggle.addEventListener("click", () => {
 
 if (
   localStorage.theme === "dark" ||
-  (!("theme" in localStorage) &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches)
+  (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
 ) {
   darkToggle.checked = true;
 } else {

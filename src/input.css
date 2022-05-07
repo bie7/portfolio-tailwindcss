@@ -29,3 +29,23 @@ body {
 #dark-toggle:checked ~ label div.toggle-circle {
   @apply translate-x-3;
 }
+
+.div-RL {
+  @apply -translate-y-[50px] opacity-0 duration-700 ease-in;
+}
+.div-show {
+  @apply translate-y-0 opacity-100;
+}
+
+.about-right,
+.about-left {
+  @apply -translate-y-14 opacity-0 duration-500;
+}
+
+.about-show {
+  @apply translate-y-0 opacity-100;
+}
+
+.active {
+  @apply text-primary duration-500 dark:text-primary;
+}
